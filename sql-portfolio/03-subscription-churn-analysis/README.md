@@ -5,7 +5,7 @@ streaming service). Unlike the other two projects, the raw data here is
 **deliberately messy** — this is meant to mirror real-world data work, where
 cleaning comes before analysis.
 
-## 📊 What's different about this one
+##  What's different about this one
 
 - Starts from a messy `raw_subscribers` table: inconsistent email casing,
   stray whitespace, two different date text formats, and duplicate signups
@@ -14,13 +14,13 @@ cleaning comes before analysis.
   just a single query
 - Demonstrates **indexing and `EXPLAIN ANALYZE`** for query performance
 
-## 📁 Files
+##  Files
 
 | File | Purpose |
 |---|---|
 | `subscription_churn_analysis.sql` | One self-contained file, in order: schema (including the messy `raw_subscribers` staging table), seed data, data cleaning, cohort retention analysis, and indexing/performance — each section's real output included as a comment block |
 
-## 🚀 Setup
+##  Setup
 
 ```bash
 createdb churn_analysis
@@ -34,7 +34,7 @@ ANALYZE` output shows the query-plan *shape* — the concept it's teaching —
 since exact cost/timing numbers depend on your PostgreSQL instance; run it
 yourself with `psql` to see your own numbers.
 
-## 🧠 What this project demonstrates
+##  What this project demonstrates
 
 - **Data cleaning in SQL**: `TRIM`, `LOWER`, `DISTINCT ON`, conditional date
   parsing with `TO_DATE` across mixed formats
@@ -46,7 +46,7 @@ yourself with `psql` to see your own numbers.
   vs. composite indexes, and knowing why an index isn't always used on
   small tables
 
-## 🔮 Possible extensions
+##  Possible extensions
 
 - Add a `plan_changes` table to track upgrades/downgrades and their effect
   on churn
