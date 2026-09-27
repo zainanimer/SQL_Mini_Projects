@@ -58,7 +58,3 @@ Each project's own README has the exact database name and file name to use.
 - Writing SQL that's commented and organized well enough for someone else
   to read and run
 
-## License
-
-MIT — feel free to fork, adapt, or use as a template for your own SQL
-portfolio.
